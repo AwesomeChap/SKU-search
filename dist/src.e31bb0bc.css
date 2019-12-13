@@ -6,7 +6,7 @@
 
 /*!
  * 
- * antd v3.26.0
+ * antd v3.26.2
  * 
  * Copyright 2015-present, Alipay, Inc.
  * All rights reserved.
@@ -3604,7 +3604,7 @@ textarea.ant-input {
 /* stylelint-disable */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
 .ant-btn {
-  line-height: 1.5;
+  line-height: 1.499;
   position: relative;
   display: inline-block;
   font-weight: 400;
@@ -4507,6 +4507,9 @@ textarea.ant-input {
   padding: 0;
   font-size: 14px;
   border-radius: 4px;
+}
+.ant-btn-icon-only > i {
+  vertical-align: middle;
 }
 .ant-btn-round {
   height: 32px;
@@ -17617,6 +17620,9 @@ textarea.ant-input-number {
   margin-top: 24px;
   text-align: right;
 }
+.ant-list-pagination .ant-pagination-options {
+  text-align: left;
+}
 .ant-list-more {
   margin-top: 12px;
   text-align: center;
@@ -21987,8 +21993,10 @@ tr.ant-table-expanded-row td > .ant-table-wrapper {
 }
 .ant-table-hide-scrollbar {
   scrollbar-color: transparent transparent;
+  min-width: unset;
 }
 .ant-table-hide-scrollbar::-webkit-scrollbar {
+  min-width: inherit;
   background-color: transparent;
 }
 .ant-table-bordered.ant-table-fixed-header .ant-table-scroll .ant-table-header::-webkit-scrollbar {
@@ -22229,7 +22237,6 @@ tr.ant-table-expanded-row td > .ant-table-wrapper {
 .ant-table-small.ant-table-bordered .ant-table-footer {
   border: 0;
   border-top: 1px solid #e8e8e8;
-  border-right: 1px solid #e8e8e8;
 }
 .ant-table-small.ant-table-bordered .ant-table-footer::before {
   display: none;
@@ -22239,7 +22246,7 @@ tr.ant-table-expanded-row td > .ant-table-wrapper {
   border-bottom: 0;
   border-left: 0;
 }
-.ant-table-small.ant-table-bordered .ant-table-thead > tr:only-child > th:last-child,
+.ant-table-small.ant-table-bordered .ant-table-thead > tr > th.ant-table-row-cell-last,
 .ant-table-small.ant-table-bordered .ant-table-tbody > tr > td:last-child {
   border-right: none;
 }
@@ -23906,6 +23913,9 @@ div.ant-typography-edit-content {
   bottom: 8px;
   color: rgba(0, 0, 0, 0.45);
   pointer-events: none;
+}
+.ant-typography-edit-content textarea {
+  -moz-transition: none;
 }
 .ant-typography ul,
 .ant-typography ol {
