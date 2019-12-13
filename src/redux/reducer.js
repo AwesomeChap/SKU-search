@@ -12,7 +12,7 @@ const initialState = {
       knowRegex: "no",
       regexArray: [
         {uuid: "as1", value: ["A-Z", "a-z"], length: 3},
-        {uuid: "as2", value: ["0-9"], length: 5}
+        {uuid: "as2", value: ["0-9"], length: 3}
       ]
     }
   ],

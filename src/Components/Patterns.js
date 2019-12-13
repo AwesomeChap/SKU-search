@@ -52,6 +52,7 @@ const Patterns = props => {
         console.log(pattern);
 
         if (pattern.knowRegex == "no") {
+            let rgx = "";
             pattern.regexArray.forEach((ra, i) => {
                 rgx += `[${ra.value.join("")}]{${ra.length}}`
                 if (i < pattern.regexArray.length - 1) {
